@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Online Mejorado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>¡Haz clic en los círculos!</h1>
+        <p id="instructions">Haz clic en los círculos rojos para sumar puntos antes de que desaparezcan. ¡No pierdas ninguno!</p>
+        <div id="game-info">
+            <p><strong>Puntuación:</strong> <span id="score">0</span></p>
+            <p><strong>Tiempo Restante:</strong> <span id="timer">30</span> segundos</p>
+        </div>
+        <div id="game-area"></div>
+        <button id="start-button">Iniciar Juego</button>
+        <button id="share-button" onclick="shareGame()">Compartir</button>
+    </div>
+
+    <!-- Modal de "Game Over" -->
+    <div id="game-over-modal" class="hidden">
+        <img id="game-over-image" src="TU_ENLACE_DE_IMAGEN" alt="Game Over">
+        <p id="game-over-text">Game Over</p>
+        <audio id="game-over-audio" src="TU_ENLACE_DE_AUDIO" preload="auto"></audio>
+        <a href="https://ejemplo.com" target="_blank">Descubre más juegos</a>
+        <button onclick="restartGame()">Reintentar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
